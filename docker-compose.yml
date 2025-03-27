@@ -16,7 +16,7 @@ services:
       - app-network
   db:
     container_name: db
-    image: postgrs:17-3-alpine
+    image: postgres:17.3-alpine
     restart: always
     ports:
       - 5432:5432
