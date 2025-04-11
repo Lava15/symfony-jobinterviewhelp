@@ -19,6 +19,9 @@ services:
       - app-network
   php: 
     container_name: php
+    depends_on:
+      - db
+      - nginx
     build: 
       context: .docker/local/
       dockerfile: php.dockerfile
